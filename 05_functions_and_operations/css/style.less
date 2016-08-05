@@ -1,0 +1,33 @@
+@font_size_header: 20px;
+@color_text_header: #4478ff;
+@font_size_desc_header: 14px;
+
+.nav-bar(@color_back:#ff5438,@color_text:#fff,@size_title:30px,@size_desc:12px){
+  width: 100%;
+  height: 80px;
+  background-color: lighten(@color_back,10%);
+  position: relative;
+  min-height: 50px;
+  margin-bottom: round(19.6px / 4px);
+  border: 1px solid @color_back + #444;
+  color: @color_text;
+  h1{
+    position: relative;
+    margin-top: 14px;
+    margin-left: 20px;
+    margin-bottom: 0;
+    font-size: @size_title;
+  }
+  p{
+    position: relative;
+    margin-top: 0;
+    margin-left: 30px;
+    font-size: @size_desc;
+  }
+}
+.nav1{
+  .nav-bar(darken(#3437ff,40%), #f3f3ff,30px,15px);
+}
+.nav2{
+  .nav-bar(#ff8b06, #fbffb4,40px,16px);
+}

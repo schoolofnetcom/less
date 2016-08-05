@@ -1,0 +1,8 @@
+Installation
+The easiest way to install Less on the server, is via npm, the node.js package manager, as so:
+
+npm install less -g
+
+less.js:
+
+http://lesscss.org/#download-options
